@@ -7,9 +7,6 @@
 [submodule "vim/bundle/minibufexpl"]
 	path = vim/bundle/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim.git
-[submodule "vim/bundle/autocomp"]
-	path = vim/bundle/autocomp
-	url = http://github.com/andre-luiz-dos-santos/autocomp
 [submodule "vim/bundle/easytags"]
 	path = vim/bundle/easytags
 	url = http://github.com/xolox/vim-easytags
