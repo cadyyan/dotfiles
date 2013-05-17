@@ -10,3 +10,6 @@
 [submodule "vim/bundle/easytags"]
 	path = vim/bundle/easytags
 	url = http://github.com/xolox/vim-easytags
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive
