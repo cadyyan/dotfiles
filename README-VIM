@@ -1,3 +1,6 @@
+NOTES
+	For PuTTY uses you should set the connection to use UTF-8 otherwise you get some really weird behaviors.
+
 DEPENDENCIES
 	Native
 	* exuberant-ctags
