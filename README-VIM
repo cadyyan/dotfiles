@@ -1,6 +1,7 @@
 DEPENDENCIES
 	Native
 	* exuberant-ctags
+	* fontconfig
 
 	Python
 	* mercurial
