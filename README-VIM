@@ -1,5 +1,6 @@
 NOTES
 	For PuTTY uses you should set the connection to use UTF-8 otherwise you get some really weird behaviors.
+	For PuTTY you'll also need to install a font that has Powerline support. Those can be found on the Powerline-Font repository on github.
 
 DEPENDENCIES
 	Native
