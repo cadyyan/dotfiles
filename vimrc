@@ -15,7 +15,7 @@ set laststatus=2
 set t_Co=256
 
 " Vanilla configs
-set updatetime=4000
+set updatetime=10000
 set updatecount=400
 
 set guioptions-=T
