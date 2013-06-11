@@ -12,6 +12,10 @@ DEPENDENCIES
 	* psutil
 	* powerline
 
+	Perl
+	* perltidy
+	* podtidy
+
 PowerLine Instructions
 (User)
 	wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf

@@ -32,5 +32,10 @@ set encoding=utf-8
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType php set tabstop=4
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
-autocmd Filetype html set omnifunc=htmlcomplete#CompleteTags noci
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
+autocmd FileType perl call PerlConfig()
+
+function! PerlConfig()
+	map <F3> :let t = winsaveview()<CR>:%!perltidy<CR>:%!podtidy<CR>:w<CR>:call winrestview(t)<CR>
+endfunction
 
