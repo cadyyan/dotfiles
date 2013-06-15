@@ -16,9 +16,6 @@
 [submodule "vim/bundle/python-syntax"]
 	path = vim/bundle/python-syntax
 	url = https://github.com/hdima/python-syntax.git
-[submodule "zsh/git-prompt"]
-	path = zsh/git-prompt
-	url = https://github.com/olivierverdier/zsh-git-prompt.git
 [submodule "vim/bundle/nerdcommenter"]
 	path = vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
