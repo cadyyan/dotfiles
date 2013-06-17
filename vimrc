@@ -16,6 +16,15 @@ set t_Co=256
 " Tagbar config
 nmap <F5> :TagbarToggle<CR>
 
+" Syntastic config
+let g:syntastic_check_on_open=1
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+let g:syntastic_perl_checkers=['perl','perlcritic']
+let g:syntastic_perl_perlcritic_args="--theme corvisa"
+
+nmap <F6> :SyntasticCheck<CR>
+
 " Vanilla configs
 set updatetime=10000
 set updatecount=400
@@ -38,6 +47,6 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
 autocmd FileType perl call PerlConfig()
 
 function! PerlConfig()
-	map <F3> :let t = winsaveview()<CR>:%!perltidy<CR>:%!podtidy<CR>:w<CR>:call winrestview(t)<CR>
+	map <F7> :let t = winsaveview()<CR>:%!perltidy<CR>:%!podtidy<CR>:w<CR>:call winrestview(t)<CR>
 endfunction
 

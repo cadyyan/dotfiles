@@ -1,0 +1,73 @@
+# This file will automatically be used if you run `perlcritic` from the
+# directory which contains it.  To use it when running from other directories,
+# either make a symlink to this file in your home directory, or set the
+# PERLCRITIC environment variable to point to this file.
+
+# Users of vim should check out http://www.vim.org/scripts/script.php?script_id=1731
+# to enable an easy way to navigate through violations from within vim
+
+# This file defines a "corvisa" theme for perlcritic, and causes only policies
+# within that theme to be used.
+
+theme = corvisa
+
+# Default to complaining about things with severity of at least 4
+# Tests will only enforce severity 5
+severity = 1
+
+##############################################
+# Configure the policies we follow
+# Overriding their severities where necessary
+
+[Variables::ProhibitConditionalDeclarations]
+add_themes = corvisa
+severity = 5
+
+[BuiltinFunctions::ProhibitStringyEval]
+add_themes = corvisa
+severity = 4
+
+[CodeLayout::ProhibitTrailingWhitespace]
+add_themes = corvisa
+
+[Modules::RequireEndWithOne]
+add_themes = corvisa
+
+[Subroutines::ProhibitExplicitReturnUndef]
+add_themes = corvisa
+severity = 4
+
+[Subroutines::ProhibitReturnSort]
+add_themes = corvisa
+
+[TestingAndDebugging::RequireUseStrict]
+add_themes = corvisa
+severity = 1
+
+[TestingAndDebugging::RequireUseWarnings]
+add_themes = corvisa
+severity = 1
+
+[ValuesAndExpressions::ProhibitMismatchedOperators]
+add_themes = corvisa
+severity = 4
+
+[Variables::ProhibitMatchVars]
+add_themes = corvisa
+
+[Modules::RequireNoMatchVarsWithUseEnglish]
+add_themes = corvisa
+severity = 5
+
+[Subroutines::RequireFinalReturn]
+add_themes = corvisa
+
+[CodeLayout::RequireTidyCode]
+add_themes = corvisa
+severity = 1
+
+[Modules::RequireFilenameMatchesPackage]
+add_themes = corvisa
+severity = 5
+
+# vim: ft=dosini
