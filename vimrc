@@ -4,10 +4,9 @@
 execute pathogen#infect()
 
 " Minibufexpl config
-let g:miniBufExplMapWindowNavVim = 1 
-let g:miniBufExplMapWindowNavArrows = 1 
-let g:miniBufExplMapCTabSwitchBufs = 1 
-let g:miniBufExplModSelTarget = 1
+nmap <F2> :TMiniBufExplorer<CR>
+nmap <F3> :MBEbn<CR>
+nmap <F4> :MBEbp<CR>
 
 " Powerline config
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
@@ -15,7 +14,7 @@ set laststatus=2
 set t_Co=256
 
 " Tagbar config
-nmap <F2> :TagbarToggle<CR>
+nmap <F5> :TagbarToggle<CR>
 
 " Vanilla configs
 set updatetime=10000
