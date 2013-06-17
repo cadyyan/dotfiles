@@ -15,6 +15,7 @@ DEPENDENCIES
 	Perl
 	* perltidy
 	* podtidy
+	* perlcritic
 
 PowerLine Instructions
 (User)
