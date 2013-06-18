@@ -5,8 +5,9 @@ execute pathogen#infect()
 
 " Minibufexpl config
 nmap <F2> :TMiniBufExplorer<CR>
-nmap <F3> :MBEbn<CR>
-nmap <F4> :MBEbp<CR>
+nmap <F3> :MBEbp<CR>
+nmap <F4> :MBEbn<CR>
+map <Leader>mbf :MiniBufExplorer<CR>
 
 " Powerline config
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
