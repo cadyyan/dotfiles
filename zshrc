@@ -45,3 +45,5 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+plugins=(colorize cpanm django git git-extras gitfast git-flow github git-remote-branch history mercurial perl python ssh-agent svn themes)
+
