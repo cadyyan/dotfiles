@@ -46,8 +46,9 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
 autocmd FileType perl call PerlConfig()
 
 function! PerlConfig()
-	map <F7> :let t = winsaveview()<CR>:%!perltidy<CR>:%!podtidy<CR>:w<CR>:call winrestview(t)<CR>
 	let g:syntastic_perl_checkers=['perl','perlcritic']
 	let g:syntastic_perl_perlcritic_args="--theme corvisa"
+	map <F7> :let t = winsaveview()<CR>:%!perltidy<CR>:%!podtidy<CR>:w<CR>:call winrestview(t)<CR>
+	map <F8> :!prove -vl<CR>
 endfunction
 
