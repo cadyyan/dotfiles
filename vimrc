@@ -18,7 +18,7 @@ set t_Co=256
 nmap <F5> :TagbarToggle<CR>
 
 " Syntastic config
-let g:syntastic_check_on_open=1
+let g:syntastic_check_on_open=0
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 let g:syntastic_perl_checkers=['perl','perlcritic']
@@ -36,7 +36,7 @@ set nu
 
 set shiftwidth=4
 set tabstop=4
-set autoindent
+set smartindent
 
 set encoding=utf-8
 
