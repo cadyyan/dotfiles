@@ -24,6 +24,10 @@ let g:syntastic_warning_symbol='⚠'
 
 nmap <F6> :SyntasticCheck<CR>
 
+" Fugitive config
+map :gc :Gcommit -a<CR>
+map :diff :Gdiff<CR>
+
 " Vanilla configs
 set updatetime=10000
 set updatecount=400
