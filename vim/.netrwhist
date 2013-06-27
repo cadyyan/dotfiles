@@ -1,7 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/cadyyan/dotfiles/vim'
 let g:netrw_dirhist_2='/home/cadyyan/vim-conf/vim/plugin'
 let g:netrw_dirhist_3='/etc/init.d'
 let g:netrw_dirhist_4='/home/james.durand/perl/traffictimes/lib/TrafficTimes/Schema'
 let g:netrw_dirhist_5='/home/james.durand/dotfiles/.git'
+let g:netrw_dirhist_6='/home/james.durand/perl/traffictimes/lib/TrafficTimes/Schema'
+let g:netrw_dirhist_7='/home/james.durand/dotfiles/re.pl'

@@ -3,4 +3,5 @@ Recommended/Required perl modules:
 	Moose
 	re.pl - Devel::REPL
 	ReadLineHistory - Devel::REPL::Plugin::ReadLineHistory
+	Data::Printer
 

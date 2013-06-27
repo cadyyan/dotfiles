@@ -7,7 +7,7 @@ use namespace::clean -except => ['meta'];
 { no warnings 'redefine';
 
 sub plugins {
-	return qw (History Colors Completion CompletionDriver::Globals CompletionDriver::INC CompletionDriver::Keywords CompletionDriver::Methods DDC DumpHistory Multiline::PPI Packages);
+	return qw (History Colors Completion CompletionDriver::Globals CompletionDriver::INC CompletionDriver::Keywords CompletionDriver::Methods DDC DumpHistory Multiline::PPI Packages DataPrinter);
 }
 
 sub apply_profile {
