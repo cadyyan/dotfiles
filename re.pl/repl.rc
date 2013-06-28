@@ -4,6 +4,8 @@ use namespace::clean -except => ['meta'];
 
 #with 'Devel::REPL::Profile';
 
+use feature "say";
+
 { no warnings 'redefine';
 
 sub plugins {
