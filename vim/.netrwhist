@@ -1,9 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/cadyyan/dotfiles/vim'
-let g:netrw_dirhist_2='/home/cadyyan/vim-conf/vim/plugin'
-let g:netrw_dirhist_3='/etc/init.d'
-let g:netrw_dirhist_4='/home/james.durand/perl/traffictimes/lib/TrafficTimes/Schema'
-let g:netrw_dirhist_5='/home/james.durand/dotfiles/.git'
-let g:netrw_dirhist_6='/home/james.durand/perl/traffictimes/lib/TrafficTimes/Schema'
-let g:netrw_dirhist_7='/home/james.durand/dotfiles/re.pl'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/james.durand/perl/perlbrew/locallib/libs/perl-5.12.4@blackjack/lib/perl5/Catalyst/Authentication/Store/DBIx/Class'
+let g:netrw_dirhist_2='/home/james.durand/perl/perlbrew/locallib/libs/perl-5.12.4@blackjack/lib/perl5/DBIx/Class/UUIDColumns'
+let g:netrw_dirhist_3='/home/james.durand/perl/blackjack/lib/Blackjack/Controller/Core/User'

@@ -31,3 +31,6 @@
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "git-achievements"]
+	path = git-achievements
+	url = https://github.com/cadyyan/git-achievements.git
