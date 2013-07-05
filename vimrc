@@ -32,8 +32,6 @@ map :diff :Gdiff<CR>
 set updatetime=10000
 set updatecount=400
 
-set guioptions-=T
-
 set nu
 
 set shiftwidth=4
