@@ -49,6 +49,7 @@ plugins=(colorize cpanm django git git-extras gitfast git-flow github git-remote
 
 export PATH="$PATH:$HOME/dotfiles/git-achievements"
 alias git="git-achievements"
+compdef git-achievements=git
 
 export PERL5LIB=./lib
 
