@@ -29,6 +29,8 @@ map :gc :Gcommit -a<CR>
 map :diff :Gdiff<CR>
 
 " Vanilla configs
+syntax enable
+
 set updatetime=10000
 set updatecount=400
 
