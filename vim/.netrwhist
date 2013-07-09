@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/james.durand/perl/perlbrew/locallib/libs/perl-5.12.4@blackjack/lib/perl5/Catalyst/Authentication/Store/DBIx/Class'
 let g:netrw_dirhist_2='/home/james.durand/perl/perlbrew/locallib/libs/perl-5.12.4@blackjack/lib/perl5/DBIx/Class/UUIDColumns'
 let g:netrw_dirhist_3='/home/james.durand/perl/blackjack/lib/Blackjack/Controller/Core/User'
 let g:netrw_dirhist_4='/home/james.durand/perl/cadillac'
+let g:netrw_dirhist_5='/home/james.durand/perl/testapp/lib/TestApp'
