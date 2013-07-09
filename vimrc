@@ -1,6 +1,4 @@
-" Plugin configs
 
-" Pathogen config
 execute pathogen#infect()
 
 " Minibufexpl config
@@ -33,11 +31,14 @@ let g:ycm_autoclose_preview_window_after_completion=0
 let g:ycm_global_ycm_extra_conf='~/.ycm_global_ycm_extra_conf'
 let g:ycm_confirm_extra_conf=0
 
-nmap <C-[> :GoToDefinition<CR>
-nmap <C-]> :GoToDeclaration<CR>
-nmap <C-\> :GoToDefinitionElseDeclaration<CR>
+nmap <C-[> :YcmCompleter GoToDefinition<CR>
+nmap <C-]> :YcmCompleter GoToDeclaration<CR>
+nmap <C-\> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Vanilla configs
+filetype on
+filetype plugin on
+filetype indent on
 syntax enable
 
 set backspace=indent,eol,start
