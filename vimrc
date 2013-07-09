@@ -1,3 +1,4 @@
+" Pathogen config
 
 execute pathogen#infect()
 
