@@ -34,3 +34,6 @@
 [submodule "git-achievements"]
 	path = git-achievements
 	url = https://github.com/cadyyan/git-achievements.git
+[submodule "vim/bundle/youcompleteme"]
+	path = vim/bundle/youcompleteme
+	url = https://github.com/Valloric/YouCompleteMe.git

@@ -31,6 +31,8 @@ map :diff :Gdiff<CR>
 " Vanilla configs
 syntax enable
 
+set backspace=indent,eol,start
+
 set updatetime=10000
 set updatecount=400
 
