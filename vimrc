@@ -1,5 +1,4 @@
 " Pathogen config
-
 execute pathogen#infect()
 
 " Minibufexpl config
@@ -40,7 +39,12 @@ nmap <C-\> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 filetype on
 filetype plugin on
 filetype indent on
-syntax enable
+
+if has("syntax")
+	syntax enable
+endif
+
+set showmatch
 
 set backspace=indent,eol,start
 
@@ -52,6 +56,8 @@ set nu
 set shiftwidth=4
 set tabstop=4
 set smartindent
+
+set smartcase
 
 set encoding=utf-8
 
