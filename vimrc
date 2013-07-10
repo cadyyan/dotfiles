@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 " Plugin configs
 
+=======
+>>>>>>> f4de380... Import Ubuntu's global vim settings.
 " Pathogen config
 execute pathogen#infect()
 
@@ -29,6 +32,18 @@ map :gc :Gcommit -a<CR>
 map :diff :Gdiff<CR>
 
 " Vanilla configs
+filetype on
+filetype plugin on
+filetype indent on
+
+if has("syntax")
+	syntax enable
+endif
+
+set showmatch
+
+set backspace=indent,eol,start
+
 set updatetime=10000
 set updatecount=400
 
@@ -37,6 +52,8 @@ set nu
 set shiftwidth=4
 set tabstop=4
 set smartindent
+
+set smartcase
 
 set encoding=utf-8
 
