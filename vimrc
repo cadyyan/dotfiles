@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 " Plugin configs
 
-=======
->>>>>>> f4de380... Import Ubuntu's global vim settings.
 " Pathogen config
 execute pathogen#infect()
 
