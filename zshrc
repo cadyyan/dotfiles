@@ -51,5 +51,13 @@ export PATH="$PATH:$HOME/dotfiles/git-achievements"
 alias git="git-achievements"
 compdef git-achievements=git
 
-export PERL5LIB=./lib
+if [ -e ~/perl5/perlbrew/etc/bashrc ]
+then
+	source ~/perl5/perlbrew/etc/bashrc
+fi
+
+if [ -e ~/.zshrc_local ]
+	source ~/.zshrc_local
+then
+fi
 
