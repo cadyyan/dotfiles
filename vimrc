@@ -1,3 +1,69 @@
+" Vanilla configs
+set nocompatible
+
+if has("vms")
+	set nobackup
+else
+	set backup
+endif
+
+set history=50
+
+set ruler
+set showcmd
+set incsearch
+
+if has('mouse')
+	set mouse=a
+endif
+
+filetype on
+filetype plugin on
+filetype indent on
+
+if &t_Co > 2 || has('gui_running')
+	syntax on
+	set hlsearch
+endif
+
+set showmatch
+
+set backspace=indent,eol,start
+
+set updatetime=10000
+set updatecount=400
+
+set nu
+
+set shiftwidth=4
+set tabstop=4
+set smartindent
+
+set smartcase
+
+set encoding=utf-8
+
+if has('autocmd')
+	augroup vimrcEx
+	au!
+
+	autocmd FileType text setlocal textwidth=78
+
+	autocmd BufReadPost *
+		\ if line("'\"") > 1 && line("'\"") <= line("$") |
+		\ 	exe "normal! g`\"" |
+		\ endif
+
+	augroup END
+endif
+
+if !exists(":DiffOrig")
+	command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
+		\ | wincmd p | diffthis
+endif
+
+" Plugin configs
+
 " Pathogen config
 execute pathogen#infect()
 
@@ -34,32 +100,6 @@ let g:ycm_confirm_extra_conf=0
 nmap <C-[> :YcmCompleter GoToDefinition<CR>
 nmap <C-]> :YcmCompleter GoToDeclaration<CR>
 nmap <C-\> :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-" Vanilla configs
-filetype on
-filetype plugin on
-filetype indent on
-
-if has("syntax")
-	syntax enable
-endif
-
-set showmatch
-
-set backspace=indent,eol,start
-
-set updatetime=10000
-set updatecount=400
-
-set nu
-
-set shiftwidth=4
-set tabstop=4
-set smartindent
-
-set smartcase
-
-set encoding=utf-8
 
 " Language configs
 autocmd FileType python call PythonConfig()
