@@ -62,6 +62,8 @@ if !exists(":DiffOrig")
 		\ | wincmd p | diffthis
 endif
 
+:command Clear :let @/ = ""
+
 " Plugin configs
 
 " Pathogen config
