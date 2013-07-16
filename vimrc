@@ -62,6 +62,8 @@ if !exists(":DiffOrig")
 		\ | wincmd p | diffthis
 endif
 
+set nobackup
+
 :command Clear :let @/ = ""
 
 " Plugin configs
