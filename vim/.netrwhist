@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/james.durand/perl/perlbrew/locallib/libs/perl-5.12.4@blackjack/lib/perl5/Catalyst/Authentication/Store/DBIx/Class'
 let g:netrw_dirhist_2='/home/james.durand/perl/perlbrew/locallib/libs/perl-5.12.4@blackjack/lib/perl5/DBIx/Class/UUIDColumns'
 let g:netrw_dirhist_3='/home/james.durand/perl/blackjack/lib/Blackjack/Controller/Core/User'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/home/james.durand/perl/testapp/lib/TestApp'
 let g:netrw_dirhist_6='/home/cadyyan/perl/cadillac/script'
 let g:netrw_dirhist_7='/home/cadyyan/perl/cadillac/lib/Cadillac'
 let g:netrw_dirhist_8='/home/cadyyan/perl/ghost_protocol/script'
+let g:netrw_dirhist_9='/home/cadyyan/perl/ghost_protocol/lib/GhostProtocol/Watcher'
