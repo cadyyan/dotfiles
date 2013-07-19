@@ -40,13 +40,11 @@ ZSH_THEME="blinks"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git colorize cpanm django git git-extras gitfast git-flow github git-remote-branch history mercurial perl python ssh-agent svn themes)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-plugins=(colorize cpanm django git git-extras gitfast git-flow github git-remote-branch history mercurial perl python ssh-agent svn themes)
-
 export PATH="$PATH:$HOME/dotfiles/git-achievements"
 alias git="git-achievements"
 compdef git-achievements=git
