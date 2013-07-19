@@ -66,6 +66,10 @@ let g:ycm_confirm_extra_conf=0
 nmap <F9> :YcmCompleter GoToDefinition<CR>
 nmap <F10> :YcmCompleter GoToDeclaration<CR>
 
+" Snipmate config
+ino <c-j> <c-r>=TriggerSnippet()<cr>
+snor <c-j> <esc>i<right><c-r>=TriggerSnippet()<cr>
+
 " Language configs
 autocmd FileType python call PythonConfig()
 autocmd FileType php set tabstop=4
