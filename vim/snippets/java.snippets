@@ -4,3 +4,104 @@ snippet file
 	public class ${2: class}
 	{
 	}
+
+snippet mod
+	package ${1: package};
+
+	import net.minecraftforge.common.Configuration;
+
+	import cpw.mods.fml.common.Mod;
+	import cpw.mods.fml.common.Mod.Init;
+	import cpw.mods.fml.common.Mod.Instance;
+	import cpw.mods.fml.common.Mod.PostInit;
+	import cpw.mods.fml.common.Mod.PreInit;
+	import cpw.mods.fml.common.SidedProxy;
+	import cpw.mods.fml.common.event.FMLInitializationEvent;
+	import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+	import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+	@Mod(modid = ${2: modid}, name = ${3: modname}, version = ${4: modversion})
+	public class ${5: class}
+	{
+		/**
+		 * The mod instance. This is required by Forge.
+		 */
+		@Instance
+		public static ${5: class} instance;
+
+		/**
+		 * The side senstive proxy class.
+		 */
+		@SidedProxy(clientSide = ${6: clientProxy}, serverSide = ${7: serverSide})
+		public static ${8: proxyClass} proxy;
+
+		/**
+		 * The mod configuration directory.
+		 */
+		private File configDir;
+
+		/**
+		 * The main mod configuration.
+		 */
+		private Configuration coreConfig;
+
+		/**
+		 * Called when the mod is in the pre-initialization phase.
+		 * 
+		 * @param event - the event information
+		 */
+		@PreInit
+		public void preInit(FMLPreInitializationEvent event)
+		{
+			configDir = new File(event.getSuggestedConfigurationFile().getParent() + "/${class}");
+			if(!configDir.exists())
+				configDir.mkdir();
+
+			coreConfig = new Configuration(new File(configDir, "${class}.cfg"));
+
+			${9: preinit}
+		}
+
+		/**
+		 * Called when the mod is in the initialization phase.
+		 * 
+		 * @param event - the event information
+		 */
+		@Init
+		public void init(FMLInitializationEvent event)
+		{
+			${10: init}
+		}
+
+		/**
+		 * Called when mod is in the post-initialization phase.
+		 * 
+		 * @param event - the event information
+		 */
+		@PostInit
+		public void postInit(FMLPostInitializationEvent event)
+		{
+			${11: postinit}
+		}
+
+		/**
+		 * Gets the configuration directory for the mod.
+		 * 
+		 * @return the configuration directory
+		 */
+		public File getConfigDir()
+		{
+			return configDir;
+		}
+
+		/**
+		 * Gets the core config for the mod.
+		 * 
+		 * @return the core configuration
+		 */
+		public Configuration getCoreConfig()
+		{
+			return coreConfig;
+		}
+	}
+
