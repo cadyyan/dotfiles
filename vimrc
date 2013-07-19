@@ -26,8 +26,6 @@ set smartcase
 
 set encoding=utf-8
 
-nmap :q :bd
-nmap :qa :qa
 command Clear :let @/ = ""
 
 " Plugin configs
