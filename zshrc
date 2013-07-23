@@ -45,10 +45,6 @@ plugins=(git colorize cpanm django git git-extras gitfast git-flow github git-re
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH="$PATH:$HOME/dotfiles/git-achievements"
-alias git="git-achievements"
-compdef git-achievements=git
-
 if [ -e ~/perl5/perlbrew/etc/bashrc ]
 then
 	source ~/perl5/perlbrew/etc/bashrc
