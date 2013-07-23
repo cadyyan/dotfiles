@@ -59,7 +59,7 @@ map :gc :Gcommit -a<CR>
 map :diff :Gdiff<CR>
 
 " YouCompleteMe config
-let g:ycm_autoclose_preview_window_after_completion=0
+let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_global_ycm_extra_conf='~/.ycm_global_ycm_extra_conf'
 let g:ycm_confirm_extra_conf=0
 
