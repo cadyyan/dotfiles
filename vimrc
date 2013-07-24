@@ -72,7 +72,7 @@ snor <c-j> <esc>i<right><c-r>=TriggerSnippet()<cr>
 
 " Language configs
 autocmd FileType python call PythonConfig()
-autocmd FileType php set tabstop=4
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
 autocmd FileType perl call PerlConfig()
