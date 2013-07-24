@@ -70,6 +70,11 @@ nmap <F10> :YcmCompleter GoToDeclaration<CR>
 ino <c-j> <c-r>=TriggerSnippet()<cr>
 snor <c-j> <esc>i<right><c-r>=TriggerSnippet()<cr>
 
+" zencoding config
+let g:user_zen_settings = {
+			\	'indentation' : '	'
+			\}
+
 " Language configs
 autocmd FileType python call PythonConfig()
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
