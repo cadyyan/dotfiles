@@ -13,7 +13,7 @@ if &t_Co > 2 || has('gui_running')
 	set hlsearch
 endif
 
-set updatetime=10000
+set updatetime=60000
 set updatecount=400
 
 set nu

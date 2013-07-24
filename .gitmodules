@@ -40,3 +40,6 @@
 [submodule "vim/bundle/zencoding"]
 	path = vim/bundle/zencoding
 	url = git@github.com:mattn/zencoding-vim.git
+[submodule "vim/bundle/matrix"]
+	path = vim/bundle/matrix
+	url = https://github.com/uguu-org/vim-matrix-screensaver
