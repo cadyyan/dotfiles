@@ -37,6 +37,18 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-fugitive'
+Bundle 'othree/html5.vim'
+Bundle 'uguu-org/vim-matrix-screensaver'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'c9s/perlomni.vim'
+Bundle 'Lokaltog/powerline'
+Bundle 'hdima/python-syntax'
+Bundle 'msanders/snipmate.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'majutsushi/tagbar'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'mattn/zencoding-vim'
 
 " Minibufexpl config
 nmap <F2> :MBEToggle<CR>
