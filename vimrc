@@ -36,6 +36,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+" Github hosted plugins
 Bundle 'tpope/vim-fugitive'
 Bundle 'othree/html5.vim'
 Bundle 'uguu-org/vim-matrix-screensaver'
@@ -49,6 +50,10 @@ Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'mattn/zencoding-vim'
+
+" Vim scripts hosted plugins
+Bundle 'Wombat'
+Bundle 'taglist.vim'
 
 " Minibufexpl config
 nmap <F2> :MBEToggle<CR>
