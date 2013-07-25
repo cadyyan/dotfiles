@@ -30,8 +30,11 @@ command Clear :let @/ = ""
 
 " Plugin configs
 
-" Pathogen config
-execute pathogen#infect()
+" Vundle config
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
 
 " Minibufexpl config
 nmap <F2> :MBEToggle<CR>
