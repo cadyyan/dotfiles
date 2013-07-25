@@ -34,7 +34,7 @@ command Clear :let @/ = ""
 execute pathogen#infect()
 
 " Minibufexpl config
-nmap <F2> :TMiniBufExplorer<CR>
+nmap <F2> :MBEToggle<CR>
 nmap <F3> :MBEbp<CR>
 nmap <F4> :MBEbn<CR>
 map <Leader>mbf :MiniBufExplorer<CR>
@@ -62,6 +62,7 @@ map :diff :Gdiff<CR>
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_global_ycm_extra_conf='~/.ycm_global_ycm_extra_conf'
 let g:ycm_confirm_extra_conf=0
+let g:ycm_allow_changing_updatetime=0
 
 nmap <F9> :YcmCompleter GoToDefinition<CR>
 nmap <F10> :YcmCompleter GoToDeclaration<CR>
@@ -74,6 +75,13 @@ snor <c-j> <esc>i<right><c-r>=TriggerSnippet()<cr>
 let g:user_zen_settings = {
 			\	'indentation' : '	'
 			\}
+
+" Matrix config
+function! Idle()
+	:MBEClose
+	:Matrix
+endfunction
+au! CursorHold * nested call Idle()
 
 " Language configs
 autocmd FileType python call PythonConfig()
