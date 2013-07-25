@@ -36,7 +36,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-Bundle 'tpope/fugitive'
+Bundle 'tpope/vim-fugitive'
 
 " Minibufexpl config
 nmap <F2> :MBEToggle<CR>
