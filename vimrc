@@ -54,6 +54,7 @@ Bundle 'mattn/zencoding-vim'
 " Vim scripts hosted plugins
 Bundle 'Wombat'
 Bundle 'taglist.vim'
+Bundle 'LargeFile'
 
 " Minibufexpl config
 nmap <F2> :MBEToggle<CR>
@@ -104,6 +105,9 @@ function! Idle()
 	:Matrix
 endfunction
 au! CursorHold * nested call Idle()
+
+" LargeFile config
+let g:LargeFile = 200 " MB
 
 " Language configs
 autocmd FileType python call PythonConfig()
