@@ -59,7 +59,7 @@ Bundle 'taglist.vim'
 nmap <F2> :MBEToggle<CR>
 nmap <F3> :MBEbp<CR>
 nmap <F4> :MBEbn<CR>
-map <Leader>mbf :MiniBufExplorer<CR>
+map <Leader>mbf :MBEFocus<CR>
 
 " Powerline config
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
