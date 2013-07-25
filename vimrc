@@ -36,6 +36,8 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'tpope/fugitive'
+
 " Minibufexpl config
 nmap <F2> :MBEToggle<CR>
 nmap <F3> :MBEbp<CR>
