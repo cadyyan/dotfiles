@@ -28,6 +28,9 @@ set encoding=utf-8
 
 command Clear :let @/ = ""
 
+vmap <Tab> >gv
+vmap <S-Tab> <gv
+
 " Plugin configs
 
 " Vundle config
