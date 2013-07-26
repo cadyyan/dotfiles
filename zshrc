@@ -50,8 +50,8 @@ then
 	source ~/perl5/perlbrew/etc/bashrc
 fi
 
-if [ -e "~/.zshrc_local" ]
-	source ~/.zshrc_local
+if [ -f "~/.zshrc_local" ]
+	source "~/.zshrc_local"
 then
 fi
 
