@@ -1,7 +1,6 @@
 " Vanilla configs
 set nocompatible
 
-" allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
 filetype on
@@ -26,10 +25,15 @@ set smartcase
 
 set encoding=utf-8
 
-command Clear :let @/ = ""
+command! Clear :let @/ = ""
 
 vmap <Tab> >gv
 vmap <S-Tab> <gv
+
+autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost vimrc source %
+autocmd! bufwritepost .gvimrc source %
+autocmd! bufwritepost gvimrc source %
 
 " Plugin configs
 
