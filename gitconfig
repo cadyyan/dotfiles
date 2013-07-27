@@ -4,3 +4,5 @@
 [user]
 	email = cadyyan@Avalon
 	name = Cadyyan
+[push]
+	default = simple
