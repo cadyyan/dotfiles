@@ -1,3 +1,6 @@
 [alias]
 	co = checkout
 
+[user]
+	email = cadyyan@Avalon
+	name = Cadyyan
