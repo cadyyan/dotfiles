@@ -45,10 +45,17 @@ plugins=(git colorize cpanm django git git-extras gitfast git-flow github git-re
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+# Tmux config
+alias tmux="TERM=screen-256color-bce tmux"
+
+# Perl config
 if [ -e ~/perl5/perlbrew/etc/bashrc ]
 then
 	source ~/perl5/perlbrew/etc/bashrc
 fi
+
+# Local configs
 
 if [ -f "~/.zshrc_local" ]
 	source "~/.zshrc_local"
