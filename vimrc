@@ -26,6 +26,14 @@ set smartcase
 
 set encoding=utf-8
 
+" Fix for using vim in tmux
+if $TERM =~ '^screen-256color'
+	map <Esc>OH <Home>
+	map! <Esc>OH <Home>
+	map <Esc>OF <End>
+	map! <Esc>OF <End>
+endif
+
 command Clear :let @/ = ""
 
 vmap <Tab> >gv
