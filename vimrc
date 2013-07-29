@@ -36,11 +36,17 @@ endif
 
 command! Clear :let @/ = ""
 
+" Indentation
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
 " Reload vim!
 nnoremap <leader>rc :source $MYVIMRC<CR>
+
+" Clipboard
+vmap <silent> <leader>d d: call system("xclip -i -selection clipboard", getreg("\""))<CR>
+vmap <silent> <leader>y y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
+nmap <silent> <leader>p :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 
 " Plugin configs
 
