@@ -47,7 +47,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # Tmux config
-alias tmux="TERM=screen-256color-bce tmux"
+alias tmux="TERM=screen-256color-bce tmux -u"
 
 # Perl config
 if [ -e ~/perl5/perlbrew/etc/bashrc ]
