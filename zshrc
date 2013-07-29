@@ -46,6 +46,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# Vim config
+export MYVIMRC=~/.vimrc
+
 # Tmux config
 alias tmux="TERM=screen-256color-bce tmux -u"
 

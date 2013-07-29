@@ -34,10 +34,13 @@ if $TERM =~ '^screen-256color'
 	map! <Esc>OF <End>
 endif
 
-command Clear :let @/ = ""
+command! Clear :let @/ = ""
 
 vmap <Tab> >gv
 vmap <S-Tab> <gv
+
+" Reload vim!
+nnoremap <leader>rc :source $MYVIMRC<CR>
 
 " Plugin configs
 
