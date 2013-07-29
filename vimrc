@@ -108,7 +108,7 @@ function! Idle()
 	:MBEClose
 	:Matrix
 endfunction
-au! CursorHold * nested call Idle()
+" au! CursorHold * nested call Idle()
 
 " LargeFile config
 let g:LargeFile = 200 " MB

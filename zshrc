@@ -50,10 +50,10 @@ source $ZSH/oh-my-zsh.sh
 alias tmux="TERM=screen-256color-bce tmux -u"
 
 # Perl config
-if [ -e ~/perl5/perlbrew/etc/bashrc ]
-then
-	source ~/perl5/perlbrew/etc/bashrc
-fi
+#if [ -e ~/perl5/perlbrew/etc/bashrc ]
+#then
+	#source ~/perl5/perlbrew/etc/bashrc
+#fi
 
 # Local configs
 
