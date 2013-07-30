@@ -56,6 +56,13 @@ vmap <silent> <leader>d d: call system("xclip -i -selection clipboard", getreg("
 vmap <silent> <leader>y y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
 nmap <silent> <leader>p :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 
+" Better movements (can move over long lines like they're multiple lines).
+map j gj
+map k gk
+
+map <Up> gk
+map <Down> gj
+
 " Plugin configs
 
 " Vundle config
