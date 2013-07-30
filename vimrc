@@ -1,29 +1,36 @@
 " Vanilla configs
 set nocompatible
 
-" allow backspacing over everything in insert mode
+" Allow backspacing over everything in insert mode.
 set backspace=indent,eol,start
 
+" Enable file type magic (required by many plugins).
 filetype on
 filetype plugin on
 filetype indent on
 
+" Fix syntax highlighting when colors are present.
 if &t_Co > 2 || has('gui_running')
 	syntax on
 	set hlsearch
 endif
 
+" Set update tick frequency. Intentionally set high.
 set updatetime=60000
 set updatecount=400
 
+" Turn on line numbers.
 set nu
 
+" Set indentation magic.
 set shiftwidth=4
 set tabstop=4
 set smartindent
 
+" Helpful casing.
 set smartcase
 
+" File encoding.
 set encoding=utf-8
 
 " Fix for using vim in tmux
@@ -34,6 +41,7 @@ if $TERM =~ '^screen-256color'
 	map! <Esc>OF <End>
 endif
 
+" Clear search results.
 command! Clear :let @/ = ""
 
 " Indentation
