@@ -63,6 +63,22 @@ map k gk
 map <Up> gk
 map <Down> gj
 
+" Allow mapping to the Alt key.
+let c='a'
+while c <= 'z'
+	exec "set <A-".c.">=\e".c
+	exec "imap \e".c." <A-".c.">"
+	let c = nr2char(1+char2nr(c))
+endw
+
+" Move a line of text using Alt+[jk]
+nmap <A-j> mz:m+<cr>`z
+nmap <A-k> mz:m-2<cr>`z
+imap <A-j> <esc><A-j>
+imap <A-k> <esc><A-k>
+vmap <A-j> :m'>+<cr>`<my`>mzgv`yo`z
+vmap <A-k> :m'<-2<cr>`>my`<mzgv`yo`z
+
 " Plugin configs
 
 " Vundle config
