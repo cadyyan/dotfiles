@@ -52,16 +52,10 @@ export MYVIMRC=~/.vimrc
 # Tmux config
 alias tmux="TERM=screen-256color-bce tmux -u"
 
-# Perl config
-#if [ -e ~/perl5/perlbrew/etc/bashrc ]
-#then
-	#source ~/perl5/perlbrew/etc/bashrc
-#fi
-
 # Local configs
 
-if [ -f "~/.zshrc_local" ]
-	source "~/.zshrc_local"
+if [ -f ~/.zshrc_local ]
+	source ~/.zshrc_local
 then
 fi
 
