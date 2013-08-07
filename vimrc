@@ -16,7 +16,7 @@ if &t_Co > 2 || has('gui_running')
 endif
 
 " Set update tick frequency. Intentionally set high.
-set updatetime=60000
+set updatetime=4000
 set updatecount=400
 
 " Turn on line numbers.
