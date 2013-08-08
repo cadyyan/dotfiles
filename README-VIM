@@ -6,6 +6,8 @@ DEPENDENCIES
 	Native
 	* exuberant-ctags
 	* fontconfig
+	* cmake
+	* build-essentials
 
 	Python
 	* mercurial
