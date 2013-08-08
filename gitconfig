@@ -1,8 +1,13 @@
 [alias]
 	co = checkout
 
+[core]
+	excludesfile = ~/.gitignore_global
+
+[push]
+	default = simple
+
 [user]
 	email = cadyyan@Avalon
 	name = Cadyyan
-[push]
-	default = simple
+
