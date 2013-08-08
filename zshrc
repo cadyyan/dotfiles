@@ -55,7 +55,7 @@ alias tmux="TERM=screen-256color-bce tmux -u"
 # Local configs
 
 if [ -f ~/.zshrc_local ]
-	source ~/.zshrc_local
 then
+	source ~/.zshrc_local
 fi
 
