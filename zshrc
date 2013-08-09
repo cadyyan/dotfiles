@@ -59,3 +59,5 @@ then
 	source ~/.zshrc_local
 fi
 
+export TERM=xterm-256color
+
