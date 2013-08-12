@@ -100,7 +100,6 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'
 Bundle 'Valloric/YouCompleteMe'
-Bundle 'mattn/zencoding-vim'
 Bundle 'elzr/vim-json'
 
 " Vim scripts hosted plugins
