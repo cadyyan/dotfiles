@@ -79,9 +79,6 @@ imap <A-k> <esc><A-k>
 vmap <A-j> :m'>+<cr>`<my`>mzgv`yo`z
 vmap <A-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
-" Spelling configuration
-"setlocal spell spelllang=en_us
-
 " Plugin configs
 
 " Vundle config
