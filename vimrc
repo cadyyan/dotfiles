@@ -101,6 +101,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'elzr/vim-json'
+Bundle 'mattn/emmet-vim'
 
 " Vim scripts hosted plugins
 Bundle 'Wombat'
