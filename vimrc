@@ -79,6 +79,9 @@ imap <A-k> <esc><A-k>
 vmap <A-j> :m'>+<cr>`<my`>mzgv`yo`z
 vmap <A-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
+" Enable smart scrolling
+set so=5
+
 " Plugin configs
 
 " Vundle config
