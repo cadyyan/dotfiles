@@ -42,7 +42,7 @@ if $TERM =~ '^screen-256color'
 endif
 
 " Clear search results.
-command! Clear :let @/ = ""
+command! Cls :let @/ = ""
 
 " Indentation
 vmap <Tab> >gv
