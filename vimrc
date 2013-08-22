@@ -117,6 +117,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'elzr/vim-json'
 Bundle 'mattn/emmet-vim'
+Bundle 'marijnh/tern_for_vim'
 
 " Vim scripts hosted plugins
 Bundle 'Wombat'
