@@ -134,8 +134,8 @@ let g:syntastic_warning_symbol='⚠'
 nmap <F6> :SyntasticCheck<CR>
 
 " Fugitive config
-command GC :Gcommit -a<CR>
-command Diff :Gdiff<CR>
+command! GC :Gcommit -a<CR>
+command! Diff :Gdiff<CR>
 
 " YouCompleteMe config
 let g:ycm_autoclose_preview_window_after_completion=1
