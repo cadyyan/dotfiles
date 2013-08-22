@@ -82,6 +82,10 @@ vmap <A-k> :m'<-2<cr>`>my`<mzgv`yo`z
 " Enable smart scrolling
 set so=5
 
+" Mouse settings
+set mouse=n
+set ttymouse=xterm
+
 " Plugin configs
 
 " Vundle config
