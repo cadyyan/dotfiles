@@ -118,6 +118,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'elzr/vim-json'
 Bundle 'mattn/emmet-vim'
 Bundle 'marijnh/tern_for_vim'
+Bundle 'vim-scripts/dbext.vim'
 
 " Vim scripts hosted plugins
 Bundle 'Wombat'
