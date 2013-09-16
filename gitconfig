@@ -4,6 +4,9 @@
 [core]
 	excludesfile = ~/.gitignore_global
 
+[http]
+	sslVerify = false
+
 [push]
 	default = simple
 
