@@ -83,7 +83,7 @@ vmap <A-k> :m'<-2<cr>`>my`<mzgv`yo`z
 set so=5
 
 " Mouse settings
-set mouse=n
+set mouse=a
 set ttymouse=xterm
 
 " Make trailing whitespace annoyingly highlighted.
