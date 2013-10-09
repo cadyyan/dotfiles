@@ -116,7 +116,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'elzr/vim-json'
-Bundle 'mattn/emmet-vim'
 Bundle 'marijnh/tern_for_vim'
 Bundle 'vim-scripts/dbext.vim'
 Bundle 'scrooloose/nerdtree'
@@ -165,11 +164,6 @@ nmap <F10> :YcmCompleter GoToDeclaration<CR>
 " Snipmate config
 ino <c-j> <c-r>=TriggerSnippet()<cr>
 snor <c-j> <esc>i<right><c-r>=TriggerSnippet()<cr>
-
-" zencoding config
-let g:user_zen_settings = {
-			\	'indentation' : '	'
-			\}
 
 " Matrix config
 function! Idle()
