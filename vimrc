@@ -119,6 +119,7 @@ Bundle 'elzr/vim-json'
 Bundle 'mattn/emmet-vim'
 Bundle 'marijnh/tern_for_vim'
 Bundle 'vim-scripts/dbext.vim'
+Bundle 'scrooloose/nerdtree'
 
 " Vim scripts hosted plugins
 Bundle 'Wombat'
@@ -178,6 +179,9 @@ endfunction
 
 " LargeFile config
 let g:LargeFile = 200 " MB
+
+" NerdTree config
+nmap <F7> :NERDTreeToggle .<CR>
 
 " Language configs
 autocmd FileType python call PythonConfig()
