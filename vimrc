@@ -120,6 +120,7 @@ Bundle 'mattn/emmet-vim'
 Bundle 'marijnh/tern_for_vim'
 Bundle 'vim-scripts/dbext.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'airblade/vim-gitgutter'
 
 " Vim scripts hosted plugins
 Bundle 'Wombat'
@@ -182,6 +183,13 @@ let g:LargeFile = 200 " MB
 
 " NerdTree config
 nmap <F8> :NERDTreeToggle .<CR>
+
+" GitGutter config
+let g:gitgutter_enabled = 0
+let g:gitgutter_highlight_lines = 0
+
+command! Ggt :GitGutterToggle
+command! Ggh :GitGutterLineHighlightsToggle
 
 " Language configs
 autocmd FileType python call PythonConfig()
