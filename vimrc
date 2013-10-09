@@ -181,7 +181,7 @@ endfunction
 let g:LargeFile = 200 " MB
 
 " NerdTree config
-nmap <F7> :NERDTreeToggle .<CR>
+nmap <F8> :NERDTreeToggle .<CR>
 
 " Language configs
 autocmd FileType python call PythonConfig()
@@ -195,7 +195,6 @@ function! PerlConfig()
 	let g:syntastic_perl_lib_path=['./lib']
 	let g:syntastic_perl_perlcritic_args="--theme corvisa"
 	map <F7> :let t = winsaveview()<CR>:%!perltidy<CR>:%!podtidy<CR>:w<CR>:call winrestview(t)<CR>
-	map <F8> :!prove -vl<CR>
 endfunction
 
 function! PythonConfig()
