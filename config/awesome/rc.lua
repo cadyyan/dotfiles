@@ -10,6 +10,8 @@ require("naughty")
 -- Load Debian menu entries
 require("debian.menu")
 
+require("volume")
+
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -182,7 +184,7 @@ for s = 1, screen.count() do
         mytextclock,
         s == 1 and mysystray or nil,
         mytasklist[s],
-        layout = awful.widget.layout.horizontal.rightleft
+        layout = awful.widget.layout.horizontal.rightleft,
     }
 end
 -- }}}
