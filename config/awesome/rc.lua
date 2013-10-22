@@ -85,6 +85,7 @@ end
 myawesomemenu = {
    { "manual", terminal .. " -e man awesome" },
    { "edit config", editor_cmd .. " " .. awesome.conffile },
+   { "lock", "gnome-screensaver-command --lock" },
    { "restart", awesome.restart },
    { "quit", awesome.quit }
 }
