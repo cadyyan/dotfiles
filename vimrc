@@ -1,6 +1,9 @@
 " Vanilla configs
 set nocompatible
 
+" Make line endings Unix style.
+set ff=unix
+
 " Allow backspacing over everything in insert mode.
 set backspace=indent,eol,start
 

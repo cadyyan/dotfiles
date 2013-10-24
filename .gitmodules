@@ -4,3 +4,6 @@
 [submodule "vim/powerline-fonts"]
 		path = vim/powerline-fonts
 			url = https://github.com/Lokaltog/powerline-fonts.git
+[submodule "config/awesome/nice-and-clean-theme"]
+	path = config/awesome/nice-and-clean-theme
+	url = https://github.com/waf/nice-and-clean-theme.git
