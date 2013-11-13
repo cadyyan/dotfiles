@@ -198,6 +198,7 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
 autocmd FileType perl call PerlConfig()
+autocmd FileType java call JavaConfig()
 
 function! PerlConfig()
 	let g:syntastic_perl_checkers=['perl','perlcritic']
@@ -209,5 +210,9 @@ endfunction
 function! PythonConfig()
 	set omnifunc=pythoncomplete#Complete
 	map <F7> :let t = winsaveview()<CR>:%!pythontidy -c ~/.pythontidy<CR>:w<CR>:call winrestview(t)<CR>
+endfunction
+
+function! JavaConfig()
+	map <F8> :ProjectTreeToggle<CR>
 endfunction
 
