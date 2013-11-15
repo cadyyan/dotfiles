@@ -127,6 +127,7 @@ Bundle 'marijnh/tern_for_vim'
 Bundle 'vim-scripts/dbext.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'benmills/vimux'
 
 " Vim scripts hosted plugins
 Bundle 'Wombat'
