@@ -193,6 +193,9 @@ let g:gitgutter_highlight_lines = 0
 command! Ggt :GitGutterToggle
 command! Ggh :GitGutterLineHighlightsToggle
 
+" Eclim config
+let g:EclimCompletionMethod = 'omnifunc'
+
 " Language configs
 autocmd FileType python call PythonConfig()
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
