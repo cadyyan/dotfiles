@@ -131,7 +131,6 @@ Bundle 'benmills/vimux'
 
 " Vim scripts hosted plugins
 Bundle 'Wombat'
-Bundle 'taglist.vim'
 Bundle 'LargeFile'
 
 " Minibufexpl config
@@ -148,6 +147,24 @@ let g:Powerline_symbols = 'fancy'
 
 " Tagbar config
 nmap <F5> :TagbarToggle<CR>
+
+let g:tagbar_type_perl = {
+	\ 'kinds' : [
+		\ 'c:constants:1:0',
+		\ 'f:formats:1:0',
+		\ 'l:labels:0:1',
+		\ 'p:packages:1:1',
+		\ 's:subroutines:0:1',
+		\ 'd:subroutine declartion [off]:1:0',
+		\ 'w:roles:1:1',
+		\ 'e:extends:1:0',
+		\ 'e:extends:1:0',
+		\ 'e:extends:1:0',
+		\ 'u:uses:1:0',
+		\ 'r:requires:1:0',
+		\ 'a:attributes:0:1',
+	\ ]
+\ }
 
 " Syntastic config
 let g:syntastic_check_on_open=0
