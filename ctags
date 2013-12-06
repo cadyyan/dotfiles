@@ -13,5 +13,4 @@
 --regex-perl=/^\=head2\s+(.+)/-- \1/p,pod,Plain Old Documentation/
 --regex-perl=/^\=head[3-5]\s+(.+)/---- \1/p,pod,Plain Old Documentation/
 --recurse=yes
---langmap=perl:+.pod
 -R
