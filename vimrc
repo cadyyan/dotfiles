@@ -105,6 +105,14 @@ set tags=./tags
 highlight ColorColumn ctermbg=yellow guibg=yellow
 call matchadd('ColorColumn', '\%81v', 100)
 
+" Other search options
+set incsearch
+set ignorecase
+set smartcase
+
+" Set file preferences
+set fileformats=unix,mac,dos
+
 " Plugin configs
 
 " Vundle config
@@ -225,11 +233,27 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
 autocmd FileType perl call PerlConfig()
 autocmd FileType java call JavaConfig()
 
+function! Perltidy_diff()
+	" Work out what the tidied file will be called...
+	let perl_file = expand( '%' )
+	let tidy_file = perl_file . '.tdy'
+
+	call system( 'perltidy -nst ' . perl_file . ' -o ' . tidy_file )
+
+	" Add the diff to the right of the current window...
+	set splitright
+	exe ":vertical diffsplit " . tidy_file
+
+	" Clean up the tidied version...
+	call delete(tidy_file)
+endfunction
+
 function! PerlConfig()
 	let g:syntastic_perl_checkers=['perl','perlcritic']
 	let g:syntastic_perl_lib_path=['./lib']
 	let g:syntastic_perl_perlcritic_args="--theme corvisa"
 	map <F7> :let t = winsaveview()<CR>:%!perltidy<CR>:%!podtidy<CR>:w<CR>:call winrestview(t)<CR>
+	map <F8> :call Perltidy_diff()<CR>
 endfunction
 
 function! PythonConfig()
