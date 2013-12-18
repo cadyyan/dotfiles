@@ -226,6 +226,8 @@ command! Ggh :GitGutterLineHighlightsToggle
 let g:EclimCompletionMethod = 'omnifunc'
 
 " Language configs
+autocmd BufRead,BufNewFile *.t set filetype=perl
+
 autocmd FileType python call PythonConfig()
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
