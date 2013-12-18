@@ -102,7 +102,7 @@ autocmd BufWinLeave * call clearmatches()
 set tags=./tags
 
 " Color the 80th character in a line.
-highlight ColorColumn ctermbg=yellow guibg=yellow
+highlight ColorColumn ctermbg=grey guibg=grey
 call matchadd('ColorColumn', '\%81v', 100)
 
 " Other search options
