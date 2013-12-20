@@ -140,6 +140,7 @@ Bundle 'vim-scripts/dbext.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'benmills/vimux'
+Bundle 'ivyl/vim-bling'
 
 " Vim scripts hosted plugins
 Bundle 'Wombat'
