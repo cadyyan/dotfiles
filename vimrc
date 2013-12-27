@@ -18,10 +18,6 @@ if &t_Co > 2 || has('gui_running')
 	set hlsearch
 endif
 
-" Set update tick frequency. Intentionally set high.
-set updatetime=4000
-set updatecount=400
-
 " Turn on line numbers.
 set nu
 
