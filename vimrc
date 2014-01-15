@@ -24,6 +24,7 @@ set nu
 " Set indentation magic.
 set shiftwidth=4
 set tabstop=4
+set noexpandtab
 set smartindent
 
 " Helpful casing.
