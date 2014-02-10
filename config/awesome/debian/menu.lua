@@ -44,6 +44,7 @@ Debian_menu["Debian_Applications_Network_Monitoring"] = {
 }
 Debian_menu["Debian_Applications_Network_Web_Browsing"] = {
 	{"Google Chrome","/opt/google/chrome/google-chrome","/opt/google/chrome/product_logo_32.xpm"},
+	{"Firefox","/usr/bin/firefox"},
 	{"Lynx-cur", "x-terminal-emulator -e ".."lynx"},
 }
 Debian_menu["Debian_Applications_Network"] = {
