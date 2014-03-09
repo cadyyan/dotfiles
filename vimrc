@@ -177,6 +177,7 @@ let g:tagbar_type_perl = {
 \ }
 
 " Syntastic config
+let g:syntastic_enable_perl_checker=1
 let g:syntastic_check_on_open=0
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
