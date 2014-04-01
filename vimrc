@@ -113,6 +113,9 @@ set smartcase
 " Set file preferences
 set fileformats=unix,mac,dos
 
+" Visual settings
+highlight SignColumn ctermbg=black guibg=black
+
 " Plugin configs
 
 " Vundle config
@@ -218,7 +221,7 @@ let g:LargeFile = 200 " MB
 nmap <F8> :NERDTreeToggle .<CR>
 
 " GitGutter config
-let g:gitgutter_enabled = 0
+let g:gitgutter_enabled = 1
 let g:gitgutter_highlight_lines = 0
 
 command! Ggt :GitGutterToggle
