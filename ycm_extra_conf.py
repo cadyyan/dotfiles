@@ -29,6 +29,7 @@
 # For more information, please refer to <http://unlicense.org/>
 
 import os
+import subprocess
 import ycm_core
 
 # These are the compilation flags that will be used in case there's no
@@ -80,6 +81,19 @@ flags = [
 '-isystem',
 './tests/gmock/include'
 ]
+
+def find_includes(flags, pkg):
+	"""
+	Use pkg-config to locate includes and libs for inclusion
+	"""
+
+	for s in subprocess.check_output(['pkg-config', '--cflags', pkg]).strip().split(' '):
+		flags += s.strip()
+
+	for s in subprocess.check_output(['pkg-config', '--libs', pkg]).strip().split(' '):
+		flags += s.strip()
+
+find_includes(flags, 'glib-2.0')
 
 # Set this to the absolute path to the folder (NOT the file!) containing the
 # compile_commands.json file to use that instead of 'flags'. See here for
