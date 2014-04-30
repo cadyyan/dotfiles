@@ -29,6 +29,7 @@ set smartindent
 
 " Helpful casing.
 set smartcase
+set wildignorecase
 
 " File encoding.
 set encoding=utf-8
