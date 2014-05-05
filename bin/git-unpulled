@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+branch="$(git symbolic-ref HEAD 2>/dev/null)"
+branch="${branch##refs/heads/}"
+
+git log --pretty=oneline "..origin/$branch"
+
