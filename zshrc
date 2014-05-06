@@ -56,6 +56,8 @@ for name in `tmux ls -F '#{session_name}'`; do
 	tmux setenv -g -t $name DISPLAY $DISPLAY #set display for all sessions
 done
 
+export PATH=$PATH:~/dotfiles/bin
+
 # Local configs
 
 if [ -f ~/.zshrc_local ]
