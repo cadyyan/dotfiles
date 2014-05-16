@@ -1,0 +1,18 @@
+{
+	"session_name": "terminal",
+	"windows": [
+		{
+			"window_name": "terminal",
+			"panes": [
+				"pwd"
+			]
+		},
+		{
+			"window_name": "dotfiles",
+			"panes": [
+				"cd dotfiles"
+			],
+		}
+	]
+}
+
