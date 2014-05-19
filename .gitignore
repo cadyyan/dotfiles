@@ -1,3 +1,6 @@
 *.swp
-vim/.netrwhist
-vim/bundle
+
+/config/configstore
+/vim/.netrwhist
+/vim/bundle
+
