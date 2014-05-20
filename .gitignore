@@ -1,6 +1,7 @@
 *.swp
 
 /config/configstore
+/tmuxp/local_*
 /vim/.netrwhist
 /vim/bundle
 
