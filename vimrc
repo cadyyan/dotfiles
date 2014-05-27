@@ -216,7 +216,7 @@ endfunction
 " au! CursorHold * nested call Idle()
 
 " LargeFile config
-let g:LargeFile = 200 " MB
+let g:LargeFile = 50 " MB
 
 " NerdTree config
 nmap <F8> :NERDTreeToggle .<CR>
