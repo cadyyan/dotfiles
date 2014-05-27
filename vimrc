@@ -147,7 +147,7 @@ Bundle 'benmills/vimux'
 Bundle 'ivyl/vim-bling'
 
 " Vim scripts hosted plugins
-Bundle 'Wombat'
+Bundle 'wombat256.vim'
 Bundle 'LargeFile'
 
 " Minibufexpl config
@@ -230,6 +230,11 @@ command! Ggh :GitGutterLineHighlightsToggle
 
 " Eclim config
 let g:EclimCompletionMethod = 'omnifunc'
+
+" Theme config
+
+set background=dark
+colorscheme wombat256mod
 
 " Language configs
 autocmd BufRead,BufNewFile *.t set filetype=perl
