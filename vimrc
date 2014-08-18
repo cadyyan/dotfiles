@@ -117,6 +117,9 @@ set fileformats=unix,mac,dos
 " Visual settings
 highlight SignColumn ctermbg=black guibg=black
 
+" Mac fixes
+set backupskip=/tmp/*,/private/tmp/*
+
 " Plugin configs
 
 " Vundle config
