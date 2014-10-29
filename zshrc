@@ -52,10 +52,6 @@ export MYVIMRC=~/.vimrc
 # Tmux config
 alias tmux="TERM=screen-256color-bce tmux -u"
 
-for name in `tmux ls -F '#{session_name}'`; do
-	tmux setenv -g -t $name DISPLAY $DISPLAY #set display for all sessions
-done
-
 export PATH=$PATH:~/dotfiles/bin
 
 # Local configs
