@@ -148,6 +148,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'benmills/vimux'
 Bundle 'ivyl/vim-bling'
+Bundle 'groenewege/vim-less'
 
 " Vim scripts hosted plugins
 Bundle 'wombat256.vim'
@@ -241,6 +242,7 @@ colorscheme wombat256mod
 
 " Language configs
 autocmd BufRead,BufNewFile *.t set filetype=perl
+autocmd BufRead,BufNewFile *.less set filetype=less
 
 autocmd FileType python call PythonConfig()
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
