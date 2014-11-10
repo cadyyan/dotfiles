@@ -52,6 +52,7 @@ export MYVIMRC=~/.vimrc
 # Tmux config
 alias tmux="TERM=screen-256color-bce tmux -u"
 
+export PATH=/usr/local/sbin:$PATH
 export PATH=$PATH:~/dotfiles/bin
 
 # Local configs
