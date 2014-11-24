@@ -275,6 +275,8 @@ function! PerlConfig()
 endfunction
 
 function! PythonConfig()
+	set noexpandtab
+	set tabstop=4
 	set omnifunc=pythoncomplete#Complete
 	map <F7> :let t = winsaveview()<CR>:%!pythontidy -c ~/.pythontidy<CR>:w<CR>:call winrestview(t)<CR>
 endfunction
