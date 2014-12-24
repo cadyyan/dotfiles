@@ -58,7 +58,6 @@ export PATH=$PATH:~/dotfiles/bin
 # Anyenv config
 export PATH=~/.anyenv/bin:$PATH
 eval "$(anyenv init -)"
-exec $SHELL -l
 
 # Local configs
 
