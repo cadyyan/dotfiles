@@ -18,6 +18,7 @@ tags
 ####################
 *.pyc
 .env
+.python-version
 
 ####################
 # Java
