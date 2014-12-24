@@ -55,6 +55,11 @@ alias tmux="TERM=screen-256color-bce tmux -u"
 export PATH=/usr/local/sbin:$PATH
 export PATH=$PATH:~/dotfiles/bin
 
+# Anyenv config
+export PATH=~/.anyenv/bin:$PATH
+eval "$(anyenv init -)"
+exec $SHELL -l
+
 # Local configs
 
 if [ -f ~/.zshrc_local ]

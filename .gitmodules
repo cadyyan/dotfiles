@@ -4,3 +4,6 @@
 [submodule "vim/powerline-fonts"]
 	path = vim/powerline-fonts
 	url = https://github.com/Lokaltog/powerline-fonts.git
+[submodule "anyenv"]
+	path = anyenv
+	url = https://github.com/riywo/anyenv.git
