@@ -53,9 +53,18 @@ vmap <S-Tab> <gv
 command! RC :source $MYVIMRC
 
 " Clipboard
-vmap <silent> <leader>d d: call system("xclip -i -selection clipboard", getreg("\""))<CR>
-vmap <silent> <leader>y y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
-nmap <silent> <leader>p :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
+let s:uname = system("uname")
+if s:uname == "Darwin\n"
+	let copyCmd = "pbcopy"
+	let pasteCmd = "pbpaste"
+else
+	let copyCmd = "xclip -i -selection clipboard"
+	let pasteCmd = "xclip -o -selection clipboard"
+endif
+
+vmap <silent> <leader>d d: call system(copyCmd, getreg("\""))<CR>
+vmap <silent> <leader>y y: call system(copyCmd, getreg("\""))<CR>
+nmap <silent> <leader>p :call setreg("\"",system(pasteCmd))<CR>p
 
 " Better movements (can move over long lines like they're multiple lines).
 map j gj
