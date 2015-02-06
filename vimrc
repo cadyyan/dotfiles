@@ -158,6 +158,8 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'benmills/vimux'
 Bundle 'ivyl/vim-bling'
 Bundle 'groenewege/vim-less'
+Bundle 'mxw/vim-jsx'
+Bundle 'kchmck/vim-coffee-script'
 
 " Vim scripts hosted plugins
 Bundle 'wombat256.vim'
@@ -252,6 +254,7 @@ colorscheme wombat256mod
 " Language configs
 autocmd BufRead,BufNewFile *.t set filetype=perl
 autocmd BufRead,BufNewFile *.less set filetype=less
+autocmd BufRead,BufNewFile *.coffee set filetype=coffee
 
 autocmd FileType python call PythonConfig()
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
