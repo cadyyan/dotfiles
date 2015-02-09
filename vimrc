@@ -243,11 +243,10 @@ let g:gitgutter_highlight_lines = 0
 command! Ggt :GitGutterToggle
 command! Ggh :GitGutterLineHighlightsToggle
 
-" Eclim config
-let g:EclimCompletionMethod = 'omnifunc'
+" vim-jsx
+let g:jsx_pragma_required = 1
 
 " Theme config
-
 set background=dark
 colorscheme wombat256mod
 
