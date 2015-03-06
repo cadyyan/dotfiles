@@ -105,7 +105,7 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 " Kill all trailing whitespace on save
-autocmd FileType vim,perl,c,cpp,python,ruby,java autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType vim,perl,c,cpp,python,ruby,java,js,jsx,css autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " CTags settings
 
