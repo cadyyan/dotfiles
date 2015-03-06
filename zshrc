@@ -5,7 +5,7 @@ ZSH=$HOME/.zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="blinks"
+ZSH_THEME="agnoster"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -51,6 +51,8 @@ export MYVIMRC=~/.vimrc
 
 # Tmux config
 alias tmux="TERM=screen-256color-bce tmux -u"
+
+alias pdb="python -m pdb"
 
 export PATH=/usr/local/sbin:$PATH
 export PATH=$PATH:~/dotfiles/bin
