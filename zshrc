@@ -61,6 +61,9 @@ export PATH=$PATH:~/dotfiles/bin
 export PATH=~/.anyenv/bin:$PATH
 eval "$(anyenv init -)"
 
+# Pyenv config
+eval "$(pyenv virtualenv-init -)"
+
 # Local configs
 
 if [ -f ~/.zshrc_local ]
