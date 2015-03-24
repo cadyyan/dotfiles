@@ -164,6 +164,7 @@ Bundle 'kchmck/vim-coffee-script'
 " Vim scripts hosted plugins
 Bundle 'wombat256.vim'
 Bundle 'LargeFile'
+Bundle 'nginx.vim'
 
 " Minibufexpl config
 nmap <F2> :MBEToggle<CR>
