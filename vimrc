@@ -152,17 +152,20 @@ Bundle 'majutsushi/tagbar'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'elzr/vim-json'
 Bundle 'marijnh/tern_for_vim'
-Bundle 'vim-scripts/dbext.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'benmills/vimux'
 Bundle 'ivyl/vim-bling'
 Bundle 'groenewege/vim-less'
+Bundle 'mxw/vim-xhp'
+Bundle 'pangloss/vim-javascript'
 Bundle 'mxw/vim-jsx'
 Bundle 'kchmck/vim-coffee-script'
 
 " Vim scripts hosted plugins
 Bundle 'wombat256.vim'
+"Bundle 'solarized'
+"Bundle 'zenburn'
 Bundle 'LargeFile'
 Bundle 'nginx.vim'
 
@@ -200,6 +203,7 @@ let g:tagbar_type_perl = {
 \ }
 
 " Syntastic config
+let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_enable_perl_checker=1
 let g:syntastic_check_on_open=0
 let g:syntastic_error_symbol='✗'
@@ -245,11 +249,13 @@ command! Ggt :GitGutterToggle
 command! Ggh :GitGutterLineHighlightsToggle
 
 " vim-jsx
-let g:jsx_pragma_required = 1
+"let g:jsx_pragma_required = 1
 
 " Theme config
 set background=dark
 colorscheme wombat256mod
+"colorscheme solarized
+"colorscheme zenburn
 
 " Language configs
 autocmd BufRead,BufNewFile *.t set filetype=perl
