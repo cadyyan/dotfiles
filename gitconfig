@@ -1,5 +1,6 @@
 [alias]
 	co = checkout
+	branches = branch -v
 
 [core]
 	excludesfile = ~/.gitignore_global
