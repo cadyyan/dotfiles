@@ -1,9 +1,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "vim/powerline-fonts"]
-	path = vim/powerline-fonts
-	url = https://github.com/Lokaltog/powerline-fonts.git
 [submodule "anyenv"]
 	path = anyenv
 	url = https://github.com/riywo/anyenv.git
