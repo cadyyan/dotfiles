@@ -1,7 +1,0 @@
-Recommended/Required perl modules:
-	cpanm
-	Moose
-	re.pl - Devel::REPL
-	ReadLineHistory - Devel::REPL::Plugin::ReadLineHistory
-	Data::Printer
-
