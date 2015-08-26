@@ -277,11 +277,6 @@ let g:easytags_async = 1
 
 
 
-" YouCompleteMe
-let g:ycm_path_to_python_interpreter = '/home/cadyyan/.anyenv/envs/pyenv/shims/python'
-
-
-
 " Language settings
 autocmd FileType python call PythonConfig()
 
