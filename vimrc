@@ -146,9 +146,8 @@ autocmd BufWinLeave * call clearmatches()
 autocmd FileType vim,perl,c,cpp,python,ruby,java,js,jsx,css
 	\ autocmd BufWritePre <buffer> :%s/\s\+$//e
 
-" Color the 100th character in a line.
-highlight ColorColumn ctermbg=grey guibg=grey
-call matchadd('ColorColumn', '\%81v', 100)
+" Color the 80th column
+set colorcolumn=80
 
 
 
