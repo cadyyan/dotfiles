@@ -277,9 +277,13 @@ let g:easytags_async = 1
 
 
 " YouCompleteMe
-
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_confirm_extra_conf = 0
+
+
+
+" NerdTree
+map <F5> :NERDTreeToggle<CR>
 
 
 
