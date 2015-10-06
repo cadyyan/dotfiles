@@ -27,6 +27,7 @@ Plugin 'xolox/vim-easytags'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ivyl/vim-bling'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'durandj/bazel.vim'
 
 call vundle#end()
 filetype plugin indent on
