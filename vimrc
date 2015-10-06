@@ -261,6 +261,8 @@ nmap <F3> :MBEbp<CR>
 nmap <F4> :MBEbn<CR>
 map <Leader>mbf :MBEFocus<CR>
 
+" Disable the buffer numbers
+let g:miniBufExplShowBufNumbers = 0
 
 
 " Syntastic
