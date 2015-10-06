@@ -82,10 +82,10 @@ colorscheme solarized
 " Hotkeys/shortcuts
 
 " Indent visual selection
-vmap <Tab> >gv
+vnoremap <Tab> >gv
 
 " Remove indent from visual selection
-vmap <S-Tab> <gv
+vnoremap <S-Tab> <gv
 
 " Clear search selection
 command! Cls :let @/ = ""
@@ -103,20 +103,20 @@ else
 	let pasteCmd = "xclip -o -selection clipboard"
 endif
 
-vmap <silent> <leader>d d: call system(copyCmd, getreg("\""))<CR>
-vmap <silent> <leader>y y: call system(copyCmd, getreg("\""))<CR>
-nmap <silent> <leader>p :call setreg("\"",system(pasteCmd))<CR>p
+vnoremap <silent> <leader>d d: call system(copyCmd, getreg("\""))<CR>
+vnoremap <silent> <leader>y y: call system(copyCmd, getreg("\""))<CR>
+nnoremap <silent> <leader>p :call setreg("\"",system(pasteCmd))<CR>p
 
 " Better movements (can move over long lines like they're multiple lines).
-map j gj
-map k gk
-map <Up> gk
-map <Down> gj
+noremap j gj
+noremap k gk
+noremap <Up> gk
+noremap <Down> gj
 
-nmap j gj
-nmap k gk
-nmap <Up> gk
-nmap <Down> gj
+nnoremap j gj
+nnoremap k gk
+nnoremap <Up> gk
+nnoremap <Down> gj
 
 " Allow mapping to the Alt key.
 let c='a'
@@ -128,12 +128,12 @@ while c <= 'z'
 endw
 
 " Move a line of text using Alt+[jk]
-nmap <A-j> mz:m+<cr>`z
-nmap <A-k> mz:m-2<cr>`z
-imap <A-j> <esc><A-j>
-imap <A-k> <esc><A-k>
-vmap <A-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <A-k> :m'<-2<cr>`>my`<mzgv`yo`z
+nnoremap <A-j> mz:m+<cr>`z
+nnoremap <A-k> mz:m-2<cr>`z
+inoremap <A-j> <esc><A-j>
+inoremap <A-k> <esc><A-k>
+vnoremap <A-j> :m'>+<cr>`<my`>mzgv`yo`z
+vnoremap <A-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 " Make trailing whitespace annoyingly highlighted.
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -256,10 +256,10 @@ endfunction
 
 
 " MiniBufExpl
-nmap <F2> :MBEToggle<CR>
-nmap <F3> :MBEbp<CR>
-nmap <F4> :MBEbn<CR>
-map <Leader>mbf :MBEFocus<CR>
+nnoremap <F2> :MBEToggle<CR>
+nnoremap <F3> :MBEbp<CR>
+nnoremap <F4> :MBEbn<CR>
+noremap <Leader>mbf :MBEFocus<CR>
 
 " Disable the buffer numbers
 let g:miniBufExplShowBufNumbers = 0
@@ -286,7 +286,7 @@ let g:ycm_confirm_extra_conf = 0
 
 
 " NerdTree
-map <F5> :NERDTreeToggle<CR>
+noremap <F5> :NERDTreeToggle<CR>
 
 
 
