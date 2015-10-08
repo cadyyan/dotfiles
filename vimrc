@@ -256,10 +256,10 @@ endfunction
 
 
 " MiniBufExpl
-nnoremap <F2> :MBEToggle<CR>
+nnoremap <F2> :MBEFocus<CR>
 nnoremap <F3> :MBEbp<CR>
 nnoremap <F4> :MBEbn<CR>
-noremap <Leader>mbf :MBEFocus<CR>
+nnoremap <F5> :MBEToggle<CR>
 
 " Disable the buffer numbers
 let g:miniBufExplShowBufNumbers = 0
@@ -286,8 +286,8 @@ let g:ycm_confirm_extra_conf = 0
 
 
 " NerdTree
-noremap <F5> :NERDTreeToggle<CR>
 noremap <F6> :NERDTreeFocus<CR>
+noremap <F7> :NERDTreeToggle<CR>
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
