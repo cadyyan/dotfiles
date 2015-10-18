@@ -59,3 +59,17 @@ There's some extra work that you'll need to do to setup the YouCompleteMe plugin
 	cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT=~/ycmd/llvm_root_dir . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 	make ycm_support_libs
 
+### Zsh
+
+Ensure that `zsh` is installed then symlink the required files.
+
+	ln -s ~/dotfiles/zshrc ~/.zshrc
+	ln -s ~/dotfiles/oh-my-zsh ~/.zsh
+
+Set the default shell for your user to `zsh`
+
+	sudo chsh -s /bin/zsh <your-username>
+
+Restart your shell session and you should have `zsh` as your shell with
+`oh-my-zsh` configured.
+
