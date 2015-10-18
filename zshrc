@@ -50,6 +50,7 @@ source $ZSH/oh-my-zsh.sh
 export MYVIMRC=~/.vimrc
 
 # Tmux config
+export TERM="screen-256color"
 alias tmux="TERM=screen-256color-bce tmux -u"
 
 alias pdb="python -m pdb"
