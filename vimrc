@@ -28,6 +28,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'ivyl/vim-bling'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'durandj/bazel.vim'
+Plugin 'evanmiller/nginx-vim-syntax'
 
 call vundle#end()
 filetype plugin indent on
@@ -291,6 +292,11 @@ noremap <F7> :NERDTreeToggle<CR>
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+
+
+" Nginx-Vim-Syntax
+autocmd BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif
 
 
 
