@@ -29,6 +29,8 @@ Plugin 'ivyl/vim-bling'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'durandj/bazel.vim'
 Plugin 'evanmiller/nginx-vim-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 filetype plugin indent on
@@ -297,6 +299,11 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Nginx-Vim-Syntax
 autocmd BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif
+
+
+
+" Vim-Javascript
+let g:javascript_enable_domhtmlcss = 1
 
 
 
