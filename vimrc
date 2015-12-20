@@ -29,6 +29,8 @@ Plugin 'ivyl/vim-bling'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'durandj/bazel.vim'
 Plugin 'evanmiller/nginx-vim-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 filetype plugin indent on
@@ -272,6 +274,7 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_aggregate_errors = 1
+let g:syntastic_javascript_checkers = ['eslint']
 
 
 
@@ -297,6 +300,11 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Nginx-Vim-Syntax
 autocmd BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif
+
+
+
+" Vim-Javascript
+let g:javascript_enable_domhtmlcss = 1
 
 
 
