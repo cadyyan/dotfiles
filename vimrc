@@ -26,11 +26,16 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ivyl/vim-bling'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'durandj/bazel.vim'
 Plugin 'evanmiller/nginx-vim-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+
+if has('python3')
+	Plugin 'davidhalter/jedi-vim'
+else
+	Plugin 'Valloric/YouCompleteMe'
+endif
 
 call vundle#end()
 filetype plugin indent on
