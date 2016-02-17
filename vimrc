@@ -319,6 +319,6 @@ autocmd FileType python call PythonConfig()
 function! PythonConfig()
 	set tabstop=4
 
-	set noexpandtab
+	set expandtab
 endfunction
 
