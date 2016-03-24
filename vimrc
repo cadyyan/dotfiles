@@ -158,6 +158,61 @@ autocmd FileType vim,perl,c,cpp,python,ruby,java,js,jsx,css
 " Color the 80th column
 set colorcolumn=80
 
+" Add hex editing mode
+command! -bar ToggleHexModeBE call ToggleHex(1)
+command! -bar ToggleHexModeLE call ToggleHex(0)
+
+function! ToggleHex(be)
+	" Hex mode should be considered a read-only operation
+	" Save values for modified and read-only for restoration later,
+	" and clear the read-only flag for now
+	let l:modified=&mod
+	let l:oldreadonly=&readonly
+	let &readonly=0
+	let l:oldmodifiable=&modifiable
+	let &modifiable=1
+
+	if !exists("b:editHex") || !b:editHex
+		" Save old options
+		let b:oldft=&ft
+		let b:oldbin=&bin
+
+		" Set new options
+		setlocal binary " Make sure it overrides any textwidth, etc
+		silent :e " This will reload the file without trickeries
+
+		let &ft="xxd"
+
+		" Set status
+		let b:editHex=1
+
+		" Switch to hex editor
+		if a:be == 1
+			%!xxd -u
+		else
+			%!xxd -u -e -g 2
+		endif
+	else
+		" Restore old options
+		let &ft=b:oldft
+
+		if !b:oldbin
+			setlocal nobinary
+		endif
+
+		" Set status
+		let b:editHex=0
+
+		" Return to normal editing
+		%!xxd -r
+	endif
+
+	" Restore values for modified and read-only state
+	let &mod=l:modified
+	let &readonly=l:oldreadonly
+	let &modifiable=l:oldmodifiable
+endfunction
+
 
 
 " Plugin settings
