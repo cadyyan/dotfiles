@@ -190,8 +190,8 @@ let g:lightline = {
 	\ 'component_type': {
 		\ 'syntastic': 'error',
 	\ },
-	\ 'separator': {'left': '⮀', 'right': '⮂'},
-	\ 'subseparator': {'left': '⮁', 'right': '⮃'},
+	\ 'separator': {'left': '', 'right': ''},
+	\ 'subseparator': {'left': '', 'right': ''},
 \ }
 
 function! LightLineFileencoding()
