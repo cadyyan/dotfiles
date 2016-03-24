@@ -190,7 +190,7 @@ function! ToggleHex(be)
 		if a:be == 1
 			%!xxd -u
 		else
-			%!xxd -u -e -g 2
+			%!xxd -u -e
 		endif
 	else
 		" Restore old options
