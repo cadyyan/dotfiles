@@ -12,6 +12,7 @@
 [user]
 	email = cadyyan@Avalon
 	name = Cadyyan
+	useconfigonly = true
 
 [color]
 	ui = auto
