@@ -40,7 +40,7 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bower brew colorize cpanm django docker git git-extras gitfast git-flow github git-remote-branch gradle history mercurial node npm perl python pylint rbenv ssh-agent svn themes tmux vagrant vim-interaction)
+plugins=(aws brew colorize django docker docker-compose git git-extras gitfast git-flow github git-remote-branch gradle history kubectl mercurial mvn node npm python pylint ssh-agent themes tmux vagrant vim-interaction)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -50,7 +50,7 @@ source $ZSH/oh-my-zsh.sh
 export MYVIMRC=~/.vimrc
 
 # Tmux config
-export TERM="screen-256color"
+export TERM="screen-256color-bce"
 alias tmux="TERM=screen-256color-bce tmux -u"
 
 alias pdb="python -m pdb"
@@ -61,6 +61,9 @@ export PATH=$PATH:~/dotfiles/bin
 # Anyenv config
 export PATH=~/.anyenv/bin:$PATH
 eval "$(anyenv init -)"
+
+# Jenv config
+eval "$(jenv init -)"
 
 # Pyenv config
 eval "$(pyenv virtualenv-init -)"
