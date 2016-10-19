@@ -68,7 +68,7 @@ set incsearch                        " Enable incremental search
 set list                             " Show invisible characters
 set laststatus=2                     " Turn on the status bar
 set listchars=tab:▸\ ,eol:¬          " Show invisibles
-set noexpandtab                      " Don't expand tabs into spaces
+set expandtab                        " Set spaces for tabs
 set nu                               " Turn on line numbers
 set shiftwidth=4                     " Set the tab width
 set smartcase                        " Allow special case sensitive searches
@@ -142,6 +142,14 @@ inoremap <A-j> <esc><A-j>
 inoremap <A-k> <esc><A-k>
 vnoremap <A-j> :m'>+<cr>`<my`>mzgv`yo`z
 vnoremap <A-k> :m'<-2<cr>`>my`<mzgv`yo`z
+
+" Fix home and end keys on Mac keyboards
+map <ESC>[H <Home>
+map <ESC>[F <End>
+imap <ESC>[H <C-O><Home>
+imap <ESC>[F <C-O><End>
+cmap <ESC>[H <Home>
+cmap <ESC>[F <End>
 
 " Make trailing whitespace annoyingly highlighted.
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -356,6 +364,11 @@ noremap <F7> :NERDTreeToggle<CR>
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+
+
+" NerdCommenter
+let g:NERDCustomDelimiters = { 'nginx': { 'left': '# ','right': '' } }
 
 
 
